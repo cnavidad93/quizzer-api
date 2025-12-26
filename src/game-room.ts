@@ -1,4 +1,4 @@
-import { loadGame } from "./data/games";
+import { loadGame } from "./data/games.js";
 import { Game, GameRoomData, Player, QuestionForClient, User } from "./types";
 
 export class GameRoom {
@@ -50,10 +50,7 @@ export class GameRoom {
     }
   }
 
-  startGame(config: {
-    gameId: string;
-    timerDuration: number;
-  }): void {
+  startGame(config: { gameId: string; timerDuration: number }): void {
     const game = loadGame(config.gameId);
     this.game = game;
     this.status = "playing";
