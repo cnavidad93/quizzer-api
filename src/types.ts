@@ -23,6 +23,11 @@ export type Player = {
   isConnected: boolean;
 };
 
+export type Viewer = {
+  id: string;
+  isConnected: boolean;
+};
+
 export type QuestionForClient = {
   id: number;
   question: string;
@@ -41,6 +46,11 @@ export type ClientMessage =
       playerId: string;
       profilePicture: string;
     }
+  | {
+      type: "joinAsViewer";
+      roomCode: string;
+      viewerId: string;
+    }
   | { type: "rejoin"; roomCode: string; playerId: string }
   | { type: "leave"; roomCode: string; playerId: string }
   | { type: "start"; roomCode: string; gameId: string; timerDuration: number }
@@ -50,6 +60,7 @@ export type ClientMessage =
 export type ServerMessage =
   | { type: "roomState"; room: GameRoomData }
   | { type: "playerJoined"; player: Player }
+  | { type: "viewerJoined"; viewer: Viewer }
   | { type: "playerLeft"; playerId: string }
   | { type: "playerReconnected"; playerId: string }
   | { type: "gameStarted"; room: GameRoomData }
@@ -79,12 +90,12 @@ export type GameRoomData = {
   creatorId: string;
   timerDuration: number;
   players: Player[];
+  viewers: Viewer[];
   status: "waiting" | "playing" | "finished";
   currentQuestionIndex: number;
   currentQuestion: QuestionForClient | null;
   startedAt: number | null;
 };
-
 
 export type GamePreview = {
   id: string;

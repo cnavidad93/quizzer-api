@@ -1,5 +1,12 @@
 import { loadGame } from "./data/games.js";
-import { Game, GameRoomData, Player, QuestionForClient, User } from "./types";
+import {
+  Game,
+  GameRoomData,
+  Player,
+  QuestionForClient,
+  User,
+  Viewer,
+} from "./types";
 
 export class GameRoom {
   code: string;
@@ -7,6 +14,7 @@ export class GameRoom {
   creatorId: string;
   timerDuration: number;
   players: Player[];
+  viewers: Viewer[];
   status: "waiting" | "playing" | "finished";
   currentQuestionIndex: number;
   currentQuestion: QuestionForClient | null;
@@ -17,6 +25,7 @@ export class GameRoom {
     this.creatorId = options.creatorId;
     this.timerDuration = 15;
     this.players = [];
+    this.viewers = [];
     this.status = "waiting";
     this.currentQuestionIndex = 0;
     this.currentQuestion = null;
@@ -50,6 +59,22 @@ export class GameRoom {
     }
   }
 
+  addViewer(user: User) {
+    this.viewers.push({
+      id: user.playerId,
+      isConnected: true,
+    });
+  }
+
+  getViewer(viewerId: string): Viewer | null {
+    const viewer = this.viewers.find((v) => v.id === viewerId);
+    return viewer || null;
+  }
+
+  removeViewer(viewerId: string): void {
+    this.viewers = this.viewers.filter((v) => v.id !== viewerId);
+  }
+
   startGame(config: { gameId: string; timerDuration: number }): void {
     const game = loadGame(config.gameId);
     this.game = game;
@@ -73,6 +98,7 @@ export class GameRoom {
       creatorId: this.creatorId,
       timerDuration: this.timerDuration,
       players: this.players,
+      viewers: this.viewers,
       status: this.status,
       currentQuestionIndex: this.currentQuestionIndex,
       currentQuestion: this.currentQuestion,

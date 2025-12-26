@@ -6,10 +6,14 @@ type WebSocketClient = WSContext;
 type RoomConnections = {
   [playerId: string]: WebSocketClient;
 };
+type ViewerConnections = {
+  [viewerId: string]: WebSocketClient;
+};
 
 export class WebSocketHandler {
   private gameManager: GameManager;
   private rooms: Map<string, RoomConnections> = new Map();
+  private viewers: Map<string, ViewerConnections> = new Map();
   private timers: Map<string, NodeJS.Timeout> = new Map();
 
   constructor(gameManager: GameManager) {
@@ -36,6 +40,10 @@ export class WebSocketHandler {
             message.username,
             message.profilePicture
           );
+          break;
+
+        case "joinAsViewer":
+          this.handleJoinAsViewer(ws, message.roomCode, message.viewerId);
           break;
 
         case "rejoin":
@@ -94,15 +102,30 @@ export class WebSocketHandler {
     excludePlayerId?: string
   ): void {
     const connections = this.rooms.get(roomCode);
-    if (!connections) return;
+    const viewerConnections = this.viewers.get(roomCode);
 
     const messageStr = JSON.stringify(message);
-    for (const [playerId, ws] of Object.entries(connections)) {
-      if (playerId !== excludePlayerId) {
+
+    // Broadcast to players
+    if (connections) {
+      for (const [playerId, ws] of Object.entries(connections)) {
+        if (playerId !== excludePlayerId) {
+          try {
+            ws.send(messageStr);
+          } catch (error) {
+            console.error(`Failed to broadcast to ${playerId}:`, error);
+          }
+        }
+      }
+    }
+
+    // Broadcast to viewers
+    if (viewerConnections) {
+      for (const [viewerId, ws] of Object.entries(viewerConnections)) {
         try {
           ws.send(messageStr);
         } catch (error) {
-          console.error(`Failed to broadcast to ${playerId}:`, error);
+          console.error(`Failed to broadcast to viewer ${viewerId}:`, error);
         }
       }
     }
@@ -125,7 +148,31 @@ export class WebSocketHandler {
       delete connections[playerId];
       if (Object.keys(connections).length === 0) {
         this.rooms.delete(roomCode);
-        this.clearTimer(roomCode);
+        const viewerConnections = this.viewers.get(roomCode);
+        if (!viewerConnections || Object.keys(viewerConnections).length === 0) {
+          this.clearTimer(roomCode);
+        }
+      }
+    }
+  }
+
+  private addViewerConnection(
+    roomCode: string,
+    viewerId: string,
+    ws: WebSocketClient
+  ): void {
+    if (!this.viewers.has(roomCode)) {
+      this.viewers.set(roomCode, {});
+    }
+    this.viewers.get(roomCode)![viewerId] = ws;
+  }
+
+  private removeViewerConnection(roomCode: string, viewerId: string): void {
+    const connections = this.viewers.get(roomCode);
+    if (connections) {
+      delete connections[viewerId];
+      if (Object.keys(connections).length === 0) {
+        this.viewers.delete(roomCode);
       }
     }
   }
@@ -269,6 +316,30 @@ export class WebSocketHandler {
 
     if (roomResult.isOk() && roomResult.value) {
       this.broadcast(roomCode, { type: "playerLeft", playerId });
+    }
+  }
+
+  private handleJoinAsViewer(
+    ws: WebSocketClient,
+    roomCode: string,
+    viewerId: string
+  ): void {
+    const roomResult = this.gameManager.getRoom(roomCode);
+
+    if (roomResult.isErr()) {
+      this.send(ws, { type: "error", message: "Room not found" });
+      return;
+    }
+
+    const room = roomResult.value;
+    room.addViewer({ playerId: viewerId, username: "", profilePicture: "" });
+
+    this.addViewerConnection(roomCode, viewerId, ws);
+    this.send(ws, { type: "roomState", room: room.toJSON() });
+
+    const viewer = room.getViewer(viewerId);
+    if (viewer) {
+      this.broadcast(roomCode, { type: "viewerJoined", viewer }, viewerId);
     }
   }
 
