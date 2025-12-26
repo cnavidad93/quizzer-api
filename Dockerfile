@@ -1,4 +1,4 @@
-FROM node:20-alpine AS base
+FROM node:lts-alpine AS base
 
 WORKDIR /app
 
@@ -13,7 +13,7 @@ COPY . .
 RUN npm run build
 
 # Production stage
-FROM node:20-alpine AS runner
+FROM node:lts-alpine AS runner
 WORKDIR /app
 
 ENV NODE_ENV=production

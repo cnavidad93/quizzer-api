@@ -1,10 +1,10 @@
-import europeFlags from "./europe.json";
-import americaFlags from "./america.json";
-import allFlags from "./all.json";
-
-const games = [europeFlags, americaFlags, allFlags] as Game[];
+import europeFlags from "./europe.json" with { type: "json" };
+import americaFlags from "./america.json" with { type: "json" };
+import allFlags from "./all.json" with { type: "json" };
 
 import { Game, Question } from "@/types";
+
+const games = [europeFlags, americaFlags, allFlags] as Game[];
 
 export function loadGames(): Promise<Game[]> {
   return Promise.resolve(games);
