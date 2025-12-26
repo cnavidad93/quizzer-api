@@ -1,0 +1,360 @@
+{
+  "id": "america-flags",
+  "title": "Banderas de América",
+  "image": "/images/flags/america.png",
+  "type": "autocomplete",
+  "questions": [
+    {
+      "id": 1,
+      "question": "https://flagcdn.com/w320/jm.png",
+      "type": "image",
+      "answer": "jm"
+    },
+    {
+      "id": 2,
+      "question": "https://flagcdn.com/w320/us.png",
+      "type": "image",
+      "answer": "us"
+    },
+    {
+      "id": 3,
+      "question": "https://flagcdn.com/w320/do.png",
+      "type": "image",
+      "answer": "do"
+    },
+    {
+      "id": 4,
+      "question": "https://flagcdn.com/w320/ca.png",
+      "type": "image",
+      "answer": "ca"
+    },
+    {
+      "id": 5,
+      "question": "https://flagcdn.com/w320/mx.png",
+      "type": "image",
+      "answer": "mx"
+    },
+    {
+      "id": 6,
+      "question": "https://flagcdn.com/w320/ht.png",
+      "type": "image",
+      "answer": "ht"
+    },
+    {
+      "id": 7,
+      "question": "https://flagcdn.com/w320/pa.png",
+      "type": "image",
+      "answer": "pa"
+    },
+    {
+      "id": 8,
+      "question": "https://flagcdn.com/w320/sv.png",
+      "type": "image",
+      "answer": "sv"
+    },
+    {
+      "id": 9,
+      "question": "https://flagcdn.com/w320/cr.png",
+      "type": "image",
+      "answer": "cr"
+    },
+    {
+      "id": 10,
+      "question": "https://flagcdn.com/w320/ni.png",
+      "type": "image",
+      "answer": "ni"
+    },
+    {
+      "id": 11,
+      "question": "https://flagcdn.com/w320/bz.png",
+      "type": "image",
+      "answer": "bz"
+    },
+    {
+      "id": 12,
+      "question": "https://flagcdn.com/w320/gt.png",
+      "type": "image",
+      "answer": "gt"
+    },
+    {
+      "id": 13,
+      "question": "https://flagcdn.com/w320/hn.png",
+      "type": "image",
+      "answer": "hn"
+    },
+    {
+      "id": 14,
+      "question": "https://flagcdn.com/w320/cu.png",
+      "type": "image",
+      "answer": "cu"
+    },
+    {
+      "id": 15,
+      "question": "https://flagcdn.com/w320/dm.png",
+      "type": "image",
+      "answer": "dm"
+    },
+    {
+      "id": 16,
+      "question": "https://flagcdn.com/w320/gd.png",
+      "type": "image",
+      "answer": "gd"
+    },
+    {
+      "id": 17,
+      "question": "https://flagcdn.com/w320/tt.png",
+      "type": "image",
+      "answer": "tt"
+    },
+    {
+      "id": 18,
+      "question": "https://flagcdn.com/w320/bs.png",
+      "type": "image",
+      "answer": "bs"
+    },
+    {
+      "id": 19,
+      "question": "https://flagcdn.com/w320/bb.png",
+      "type": "image",
+      "answer": "bb"
+    },
+    {
+      "id": 20,
+      "question": "https://flagcdn.com/w320/ag.png",
+      "type": "image",
+      "answer": "ag"
+    },
+    {
+      "id": 21,
+      "question": "https://flagcdn.com/w320/vc.png",
+      "type": "image",
+      "answer": "vc"
+    },
+    {
+      "id": 22,
+      "question": "https://flagcdn.com/w320/kn.png",
+      "type": "image",
+      "answer": "kn"
+    },
+    {
+      "id": 23,
+      "question": "https://flagcdn.com/w320/lc.png",
+      "type": "image",
+      "answer": "lc"
+    },
+    {
+      "id": 24,
+      "question": "https://flagcdn.com/w320/py.png",
+      "type": "image",
+      "answer": "py"
+    },
+    {
+      "id": 25,
+      "question": "https://flagcdn.com/w320/ec.png",
+      "type": "image",
+      "answer": "ec"
+    },
+    {
+      "id": 26,
+      "question": "https://flagcdn.com/w320/ve.png",
+      "type": "image",
+      "answer": "ve"
+    },
+    {
+      "id": 27,
+      "question": "https://flagcdn.com/w320/ar.png",
+      "type": "image",
+      "answer": "ar"
+    },
+    {
+      "id": 28,
+      "question": "https://flagcdn.com/w320/co.png",
+      "type": "image",
+      "answer": "co"
+    },
+    {
+      "id": 29,
+      "question": "https://flagcdn.com/w320/pe.png",
+      "type": "image",
+      "answer": "pe"
+    },
+    {
+      "id": 30,
+      "question": "https://flagcdn.com/w320/uy.png",
+      "type": "image",
+      "answer": "uy"
+    },
+    {
+      "id": 31,
+      "question": "https://flagcdn.com/w320/sr.png",
+      "type": "image",
+      "answer": "sr"
+    },
+    {
+      "id": 32,
+      "question": "https://flagcdn.com/w320/br.png",
+      "type": "image",
+      "answer": "br"
+    },
+    {
+      "id": 33,
+      "question": "https://flagcdn.com/w320/gy.png",
+      "type": "image",
+      "answer": "gy"
+    },
+    {
+      "id": 34,
+      "question": "https://flagcdn.com/w320/cl.png",
+      "type": "image",
+      "answer": "cl"
+    },
+    {
+      "id": 35,
+      "question": "https://flagcdn.com/w320/bo.png",
+      "type": "image",
+      "answer": "bo"
+    }
+  ],
+  "options": [
+    {
+      "id": "ag",
+      "text": "Antigua y Barbuda"
+    },
+    {
+      "id": "ar",
+      "text": "Argentina"
+    },
+    {
+      "id": "bs",
+      "text": "Bahamas"
+    },
+    {
+      "id": "bb",
+      "text": "Barbados"
+    },
+    {
+      "id": "bz",
+      "text": "Belice"
+    },
+    {
+      "id": "bo",
+      "text": "Bolivia"
+    },
+    {
+      "id": "br",
+      "text": "Brasil"
+    },
+    {
+      "id": "ca",
+      "text": "Canadá"
+    },
+    {
+      "id": "cl",
+      "text": "Chile"
+    },
+    {
+      "id": "co",
+      "text": "Colombia"
+    },
+    {
+      "id": "cr",
+      "text": "Costa Rica"
+    },
+    {
+      "id": "cu",
+      "text": "Cuba"
+    },
+    {
+      "id": "dm",
+      "text": "Dominica"
+    },
+    {
+      "id": "ec",
+      "text": "Ecuador"
+    },
+    {
+      "id": "sv",
+      "text": "El Salvador"
+    },
+    {
+      "id": "us",
+      "text": "Estados Unidos"
+    },
+    {
+      "id": "gd",
+      "text": "Granada"
+    },
+    {
+      "id": "gt",
+      "text": "Guatemala"
+    },
+    {
+      "id": "gy",
+      "text": "Guyana"
+    },
+    {
+      "id": "ht",
+      "text": "Haití"
+    },
+    {
+      "id": "hn",
+      "text": "Honduras"
+    },
+    {
+      "id": "jm",
+      "text": "Jamaica"
+    },
+    {
+      "id": "mx",
+      "text": "México"
+    },
+    {
+      "id": "ni",
+      "text": "Nicaragua"
+    },
+    {
+      "id": "pa",
+      "text": "Panamá"
+    },
+    {
+      "id": "py",
+      "text": "Paraguay"
+    },
+    {
+      "id": "pe",
+      "text": "Perú"
+    },
+    {
+      "id": "do",
+      "text": "República Dominicana"
+    },
+    {
+      "id": "kn",
+      "text": "San Cristóbal y Nieves"
+    },
+    {
+      "id": "vc",
+      "text": "Sant Vicente y las Granadinas"
+    },
+    {
+      "id": "lc",
+      "text": "Santa Lucía"
+    },
+    {
+      "id": "sr",
+      "text": "Surinam"
+    },
+    {
+      "id": "tt",
+      "text": "Trinidad y Tobago"
+    },
+    {
+      "id": "uy",
+      "text": "Uruguay"
+    },
+    {
+      "id": "ve",
+      "text": "Venezuela"
+    }
+  ]
+}

@@ -1,0 +1,470 @@
+{
+  "id": "europe-flags",
+  "title": "Banderas de Europa",
+  "image": "/images/flags/europe.png",
+  "type": "autocomplete",
+  "questions": [
+    {
+      "id": 1,
+      "question": "https://flagcdn.com/w320/ad.png",
+      "type": "image",
+      "answer": "ad"
+    },
+    {
+      "id": 2,
+      "question": "https://flagcdn.com/w320/al.png",
+      "type": "image",
+      "answer": "al"
+    },
+    {
+      "id": 3,
+      "question": "https://flagcdn.com/w320/at.png",
+      "type": "image",
+      "answer": "at"
+    },
+    {
+      "id": 4,
+      "question": "https://flagcdn.com/w320/be.png",
+      "type": "image",
+      "answer": "be"
+    },
+    {
+      "id": 5,
+      "question": "https://flagcdn.com/w320/bg.png",
+      "type": "image",
+      "answer": "bg"
+    },
+    {
+      "id": 6,
+      "question": "https://flagcdn.com/w320/ch.png",
+      "type": "image",
+      "answer": "ch"
+    },
+    {
+      "id": 7,
+      "question": "https://flagcdn.com/w320/cy.png",
+      "type": "image",
+      "answer": "cy"
+    },
+    {
+      "id": 8,
+      "question": "https://flagcdn.com/w320/dk.png",
+      "type": "image",
+      "answer": "dk"
+    },
+    {
+      "id": 9,
+      "question": "https://flagcdn.com/w320/ee.png",
+      "type": "image",
+      "answer": "ee"
+    },
+    {
+      "id": 10,
+      "question": "https://flagcdn.com/w320/es.png",
+      "type": "image",
+      "answer": "es"
+    },
+    {
+      "id": 11,
+      "question": "https://flagcdn.com/w320/fi.png",
+      "type": "image",
+      "answer": "fi"
+    },
+    {
+      "id": 12,
+      "question": "https://flagcdn.com/w320/fr.png",
+      "type": "image",
+      "answer": "fr"
+    },
+    {
+      "id": 13,
+      "question": "https://flagcdn.com/w320/gr.png",
+      "type": "image",
+      "answer": "gr"
+    },
+    {
+      "id": 14,
+      "question": "https://flagcdn.com/w320/hr.png",
+      "type": "image",
+      "answer": "hr"
+    },
+    {
+      "id": 15,
+      "question": "https://flagcdn.com/w320/hu.png",
+      "type": "image",
+      "answer": "hu"
+    },
+    {
+      "id": 16,
+      "question": "https://flagcdn.com/w320/ie.png",
+      "type": "image",
+      "answer": "ie"
+    },
+    {
+      "id": 17,
+      "question": "https://flagcdn.com/w320/it.png",
+      "type": "image",
+      "answer": "it"
+    },
+    {
+      "id": 18,
+      "question": "https://flagcdn.com/w320/lt.png",
+      "type": "image",
+      "answer": "lt"
+    },
+    {
+      "id": 19,
+      "question": "https://flagcdn.com/w320/lu.png",
+      "type": "image",
+      "answer": "lu"
+    },
+    {
+      "id": 20,
+      "question": "https://flagcdn.com/w320/lv.png",
+      "type": "image",
+      "answer": "lv"
+    },
+    {
+      "id": 21,
+      "question": "https://flagcdn.com/w320/md.png",
+      "type": "image",
+      "answer": "md"
+    },
+    {
+      "id": 22,
+      "question": "https://flagcdn.com/w320/me.png",
+      "type": "image",
+      "answer": "me"
+    },
+    {
+      "id": 23,
+      "question": "https://flagcdn.com/w320/mk.png",
+      "type": "image",
+      "answer": "mk"
+    },
+    {
+      "id": 24,
+      "question": "https://flagcdn.com/w320/mt.png",
+      "type": "image",
+      "answer": "mt"
+    },
+    {
+      "id": 25,
+      "question": "https://flagcdn.com/w320/nl.png",
+      "type": "image",
+      "answer": "nl"
+    },
+    {
+      "id": 26,
+      "question": "https://flagcdn.com/w320/no.png",
+      "type": "image",
+      "answer": "no"
+    },
+    {
+      "id": 27,
+      "question": "https://flagcdn.com/w320/pl.png",
+      "type": "image",
+      "answer": "pl"
+    },
+    {
+      "id": 28,
+      "question": "https://flagcdn.com/w320/pt.png",
+      "type": "image",
+      "answer": "pt"
+    },
+    {
+      "id": 29,
+      "question": "https://flagcdn.com/w320/ro.png",
+      "type": "image",
+      "answer": "ro"
+    },
+    {
+      "id": 30,
+      "question": "https://flagcdn.com/w320/se.png",
+      "type": "image",
+      "answer": "se"
+    },
+    {
+      "id": 31,
+      "question": "https://flagcdn.com/w320/sk.png",
+      "type": "image",
+      "answer": "sk"
+    },
+    {
+      "id": 32,
+      "question": "https://flagcdn.com/w320/si.png",
+      "type": "image",
+      "answer": "si"
+    },
+    {
+      "id": 33,
+      "question": "https://flagcdn.com/w320/ua.png",
+      "type": "image",
+      "answer": "ua"
+    },
+    {
+      "id": 34,
+      "question": "https://flagcdn.com/w320/gb.png",
+      "type": "image",
+      "answer": "gb"
+    },
+    {
+      "id": 35,
+      "question": "https://flagcdn.com/w320/va.png",
+      "type": "image",
+      "answer": "va"
+    },
+    {
+      "id": 36,
+      "question": "https://flagcdn.com/w320/cz.png",
+      "type": "image",
+      "answer": "cz"
+    },
+    {
+      "id": 37,
+      "question": "https://flagcdn.com/w320/is.png",
+      "type": "image",
+      "answer": "is"
+    },
+    {
+      "id": 38,
+      "question": "https://flagcdn.com/w320/rs.png",
+      "type": "image",
+      "answer": "rs"
+    },
+    {
+      "id": 39,
+      "question": "https://flagcdn.com/w320/ba.png",
+      "type": "image",
+      "answer": "ba"
+    },
+    {
+      "id": 40,
+      "question": "https://flagcdn.com/w320/de.png",
+      "type": "image",
+      "answer": "de"
+    },
+    {
+      "id": 41,
+      "question": "https://flagcdn.com/w320/sm.png",
+      "type": "image",
+      "answer": "sm"
+    },
+    {
+      "id": 42,
+      "question": "https://flagcdn.com/w320/li.png",
+      "type": "image",
+      "answer": "li"
+    },
+    {
+      "id": 43,
+      "question": "https://flagcdn.com/w320/tr.png",
+      "type": "image",
+      "answer": "tr"
+    },
+    {
+      "id": 44,
+      "question": "https://flagcdn.com/w320/ru.png",
+      "type": "image",
+      "answer": "ru"
+    },
+    {
+      "id": 45,
+      "question": "https://flagcdn.com/w320/mc.png",
+      "type": "image",
+      "answer": "mc"
+    },
+    {
+      "id": 46,
+      "question": "https://flagcdn.com/w320/by.png",
+      "type": "image",
+      "answer": "by"
+    }
+  ],
+  "options": [
+    {
+      "id": "al",
+      "text": "Albania"
+    },
+    {
+      "id": "de",
+      "text": "Alemania"
+    },
+    {
+      "id": "ad",
+      "text": "Andorra"
+    },
+    {
+      "id": "at",
+      "text": "Austria"
+    },
+    {
+      "id": "be",
+      "text": "Belgica"
+    },
+    {
+      "id": "by",
+      "text": "Bielorrusia"
+    },
+    {
+      "id": "ba",
+      "text": "Bosnia y Herzegovina"
+    },
+    {
+      "id": "bg",
+      "text": "Bulgaria"
+    },
+    {
+      "id": "cz",
+      "text": "Chequia"
+    },
+    {
+      "id": "cy",
+      "text": "Chipre"
+    },
+    {
+      "id": "hr",
+      "text": "Croacia"
+    },
+    {
+      "id": "dk",
+      "text": "Dinamarca"
+    },
+    {
+      "id": "sk",
+      "text": "Eslovaquia"
+    },
+    {
+      "id": "si",
+      "text": "Eslovenia"
+    },
+    {
+      "id": "es",
+      "text": "España"
+    },
+    {
+      "id": "ee",
+      "text": "Estonia"
+    },
+    {
+      "id": "fi",
+      "text": "Finlandia"
+    },
+    {
+      "id": "fr",
+      "text": "Francia"
+    },
+    {
+      "id": "gr",
+      "text": "Grecia"
+    },
+    {
+      "id": "hu",
+      "text": "Hungría"
+    },
+    {
+      "id": "ie",
+      "text": "Irlanda"
+    },
+    {
+      "id": "is",
+      "text": "Islandia"
+    },
+    {
+      "id": "it",
+      "text": "Italia"
+    },
+    {
+      "id": "lv",
+      "text": "Letonia"
+    },
+    {
+      "id": "li",
+      "text": "Liechtenstein"
+    },
+    {
+      "id": "lt",
+      "text": "Lituania"
+    },
+    {
+      "id": "lu",
+      "text": "Luxemburgo"
+    },
+    {
+      "id": "mk",
+      "text": "Macedonia del Norte"
+    },
+    {
+      "id": "mt",
+      "text": "Malta"
+    },
+    {
+      "id": "md",
+      "text": "Moldavia"
+    },
+    {
+      "id": "mc",
+      "text": "Mónaco"
+    },
+    {
+      "id": "me",
+      "text": "Montenegro"
+    },
+    {
+      "id": "no",
+      "text": "Noruega"
+    },
+    {
+      "id": "nl",
+      "text": "Países Bajos"
+    },
+    {
+      "id": "pl",
+      "text": "Polonia"
+    },
+    {
+      "id": "pt",
+      "text": "Portugal"
+    },
+    {
+      "id": "gb",
+      "text": "Reino Unido"
+    },
+    {
+      "id": "ro",
+      "text": "Rumania"
+    },
+    {
+      "id": "ru",
+      "text": "Russia"
+    },
+    {
+      "id": "sm",
+      "text": "San Marino"
+    },
+    {
+      "id": "rs",
+      "text": "Serbia"
+    },
+    {
+      "id": "se",
+      "text": "Suecia"
+    },
+    {
+      "id": "ch",
+      "text": "Suiza"
+    },
+    {
+      "id": "tr",
+      "text": "Turquía"
+    },
+    {
+      "id": "ua",
+      "text": "Ucrania"
+    },
+    {
+      "id": "va",
+      "text": "Vaticano"
+    }
+  ]
+}
