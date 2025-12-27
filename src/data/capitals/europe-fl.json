@@ -1,6 +1,6 @@
 {
-  "id": "europe-flags",
-  "title": "Banderas de Europa",
+  "id": "europe-capitals-fl",
+  "title": "Capitales de Europa (Bandera)",
   "image": "/images/flags/europe.png",
   "type": "autocomplete",
   "questions": [
