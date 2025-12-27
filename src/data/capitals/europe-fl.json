@@ -1,0 +1,470 @@
+{
+  "id": "europe-flags",
+  "title": "Banderas de Europa",
+  "image": "/images/flags/europe.png",
+  "type": "autocomplete",
+  "questions": [
+    {
+      "id": 1,
+      "question": "https://flagcdn.com/w320/ad.png",
+      "type": "image",
+      "answer": "ad"
+    },
+    {
+      "id": 2,
+      "question": "https://flagcdn.com/w320/al.png",
+      "type": "image",
+      "answer": "al"
+    },
+    {
+      "id": 3,
+      "question": "https://flagcdn.com/w320/at.png",
+      "type": "image",
+      "answer": "at"
+    },
+    {
+      "id": 4,
+      "question": "https://flagcdn.com/w320/be.png",
+      "type": "image",
+      "answer": "be"
+    },
+    {
+      "id": 5,
+      "question": "https://flagcdn.com/w320/bg.png",
+      "type": "image",
+      "answer": "bg"
+    },
+    {
+      "id": 6,
+      "question": "https://flagcdn.com/w320/ch.png",
+      "type": "image",
+      "answer": "ch"
+    },
+    {
+      "id": 7,
+      "question": "https://flagcdn.com/w320/cy.png",
+      "type": "image",
+      "answer": "cy"
+    },
+    {
+      "id": 8,
+      "question": "https://flagcdn.com/w320/dk.png",
+      "type": "image",
+      "answer": "dk"
+    },
+    {
+      "id": 9,
+      "question": "https://flagcdn.com/w320/ee.png",
+      "type": "image",
+      "answer": "ee"
+    },
+    {
+      "id": 10,
+      "question": "https://flagcdn.com/w320/es.png",
+      "type": "image",
+      "answer": "es"
+    },
+    {
+      "id": 11,
+      "question": "https://flagcdn.com/w320/fi.png",
+      "type": "image",
+      "answer": "fi"
+    },
+    {
+      "id": 12,
+      "question": "https://flagcdn.com/w320/fr.png",
+      "type": "image",
+      "answer": "fr"
+    },
+    {
+      "id": 13,
+      "question": "https://flagcdn.com/w320/gr.png",
+      "type": "image",
+      "answer": "gr"
+    },
+    {
+      "id": 14,
+      "question": "https://flagcdn.com/w320/hr.png",
+      "type": "image",
+      "answer": "hr"
+    },
+    {
+      "id": 15,
+      "question": "https://flagcdn.com/w320/hu.png",
+      "type": "image",
+      "answer": "hu"
+    },
+    {
+      "id": 16,
+      "question": "https://flagcdn.com/w320/ie.png",
+      "type": "image",
+      "answer": "ie"
+    },
+    {
+      "id": 17,
+      "question": "https://flagcdn.com/w320/it.png",
+      "type": "image",
+      "answer": "it"
+    },
+    {
+      "id": 18,
+      "question": "https://flagcdn.com/w320/lt.png",
+      "type": "image",
+      "answer": "lt"
+    },
+    {
+      "id": 19,
+      "question": "https://flagcdn.com/w320/lu.png",
+      "type": "image",
+      "answer": "lu"
+    },
+    {
+      "id": 20,
+      "question": "https://flagcdn.com/w320/lv.png",
+      "type": "image",
+      "answer": "lv"
+    },
+    {
+      "id": 21,
+      "question": "https://flagcdn.com/w320/md.png",
+      "type": "image",
+      "answer": "md"
+    },
+    {
+      "id": 22,
+      "question": "https://flagcdn.com/w320/me.png",
+      "type": "image",
+      "answer": "me"
+    },
+    {
+      "id": 23,
+      "question": "https://flagcdn.com/w320/mk.png",
+      "type": "image",
+      "answer": "mk"
+    },
+    {
+      "id": 24,
+      "question": "https://flagcdn.com/w320/mt.png",
+      "type": "image",
+      "answer": "mt"
+    },
+    {
+      "id": 25,
+      "question": "https://flagcdn.com/w320/nl.png",
+      "type": "image",
+      "answer": "nl"
+    },
+    {
+      "id": 26,
+      "question": "https://flagcdn.com/w320/no.png",
+      "type": "image",
+      "answer": "no"
+    },
+    {
+      "id": 27,
+      "question": "https://flagcdn.com/w320/pl.png",
+      "type": "image",
+      "answer": "pl"
+    },
+    {
+      "id": 28,
+      "question": "https://flagcdn.com/w320/pt.png",
+      "type": "image",
+      "answer": "pt"
+    },
+    {
+      "id": 29,
+      "question": "https://flagcdn.com/w320/ro.png",
+      "type": "image",
+      "answer": "ro"
+    },
+    {
+      "id": 30,
+      "question": "https://flagcdn.com/w320/se.png",
+      "type": "image",
+      "answer": "se"
+    },
+    {
+      "id": 31,
+      "question": "https://flagcdn.com/w320/sk.png",
+      "type": "image",
+      "answer": "sk"
+    },
+    {
+      "id": 32,
+      "question": "https://flagcdn.com/w320/si.png",
+      "type": "image",
+      "answer": "si"
+    },
+    {
+      "id": 33,
+      "question": "https://flagcdn.com/w320/ua.png",
+      "type": "image",
+      "answer": "ua"
+    },
+    {
+      "id": 34,
+      "question": "https://flagcdn.com/w320/gb.png",
+      "type": "image",
+      "answer": "gb"
+    },
+    {
+      "id": 35,
+      "question": "https://flagcdn.com/w320/va.png",
+      "type": "image",
+      "answer": "va"
+    },
+    {
+      "id": 36,
+      "question": "https://flagcdn.com/w320/cz.png",
+      "type": "image",
+      "answer": "cz"
+    },
+    {
+      "id": 37,
+      "question": "https://flagcdn.com/w320/is.png",
+      "type": "image",
+      "answer": "is"
+    },
+    {
+      "id": 38,
+      "question": "https://flagcdn.com/w320/rs.png",
+      "type": "image",
+      "answer": "rs"
+    },
+    {
+      "id": 39,
+      "question": "https://flagcdn.com/w320/ba.png",
+      "type": "image",
+      "answer": "ba"
+    },
+    {
+      "id": 40,
+      "question": "https://flagcdn.com/w320/de.png",
+      "type": "image",
+      "answer": "de"
+    },
+    {
+      "id": 41,
+      "question": "https://flagcdn.com/w320/sm.png",
+      "type": "image",
+      "answer": "sm"
+    },
+    {
+      "id": 42,
+      "question": "https://flagcdn.com/w320/li.png",
+      "type": "image",
+      "answer": "li"
+    },
+    {
+      "id": 43,
+      "question": "https://flagcdn.com/w320/tr.png",
+      "type": "image",
+      "answer": "tr"
+    },
+    {
+      "id": 44,
+      "question": "https://flagcdn.com/w320/ru.png",
+      "type": "image",
+      "answer": "ru"
+    },
+    {
+      "id": 45,
+      "question": "https://flagcdn.com/w320/mc.png",
+      "type": "image",
+      "answer": "mc"
+    },
+    {
+      "id": 46,
+      "question": "https://flagcdn.com/w320/by.png",
+      "type": "image",
+      "answer": "by"
+    }
+  ],
+  "options": [
+    {
+      "id": "nl",
+      "text": "Ámsterdam"
+    },
+    {
+      "id": "ad",
+      "text": "Andorra la Vella"
+    },
+    {
+      "id": "tr",
+      "text": "Ankara"
+    },
+    {
+      "id": "gr",
+      "text": "Atenas"
+    },
+    {
+      "id": "rs",
+      "text": "Belgrado"
+    },
+    {
+      "id": "de",
+      "text": "Berlin"
+    },
+    {
+      "id": "ch",
+      "text": "Berna"
+    },
+    {
+      "id": "sk",
+      "text": "Bratislava"
+    },
+    {
+      "id": "be",
+      "text": "Bruselas"
+    },
+    {
+      "id": "ro",
+      "text": "Bucarest"
+    },
+    {
+      "id": "hu",
+      "text": "Budapest"
+    },
+    {
+      "id": "md",
+      "text": "Chisináu"
+    },
+    {
+      "id": "dk",
+      "text": "Copenhague"
+    },
+    {
+      "id": "ie",
+      "text": "Dublín"
+    },
+    {
+      "id": "se",
+      "text": "Estocolmo"
+    },
+    {
+      "id": "fi",
+      "text": "Helsinki"
+    },
+    {
+      "id": "ua",
+      "text": "Kiev"
+    },
+    {
+      "id": "mt",
+      "text": "La Valeta"
+    },
+    {
+      "id": "si",
+      "text": "Liubliana"
+    },
+    {
+      "id": "pt",
+      "text": "Lisboa"
+    },
+    {
+      "id": "gb",
+      "text": "Londres"
+    },
+    {
+      "id": "lu",
+      "text": "Luxemburgo"
+    },
+    {
+      "id": "es",
+      "text": "Madrid"
+    },
+    {
+      "id": "by",
+      "text": "Minsk"
+    },
+    {
+      "id": "mc",
+      "text": "Mónaco"
+    },
+    {
+      "id": "ru",
+      "text": "Moscú"
+    },
+    {
+      "id": "cy",
+      "text": "Nicosia"
+    },
+    {
+      "id": "no",
+      "text": "Oslo"
+    },
+    {
+      "id": "fr",
+      "text": "París"
+    },
+    {
+      "id": "me",
+      "text": "Podgorica"
+    },
+    {
+      "id": "cz",
+      "text": "Praga"
+    },
+    {
+      "id": "is",
+      "text": "Reikiavik"
+    },
+    {
+      "id": "lv",
+      "text": "Riga"
+    },
+    {
+      "id": "it",
+      "text": "Roma"
+    },
+    {
+      "id": "sm",
+      "text": "San Marino"
+    },
+    {
+      "id": "ba",
+      "text": "Sarajevo"
+    },
+    {
+      "id": "mk",
+      "text": "Skopie"
+    },
+    {
+      "id": "bg",
+      "text": "Sofía"
+    },
+    {
+      "id": "ee",
+      "text": "Tallin"
+    },
+    {
+      "id": "al",
+      "text": "Tirana"
+    },
+    {
+      "id": "li",
+      "text": "Vaduz"
+    },
+    {
+      "id": "va",
+      "text": "Vaticano"
+    },
+    {
+      "id": "pl",
+      "text": "Varsovia"
+    },
+    {
+      "id": "at",
+      "text": "Viena"
+    },
+    {
+      "id": "lt",
+      "text": "Vilna"
+    },
+    {
+      "id": "hr",
+      "text": "Zagreb"
+    }
+  ]
+}

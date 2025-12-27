@@ -1,0 +1,470 @@
+{
+  "id": "europe-capitals",
+  "title": "Capitales de Europa (Nombre)",
+  "text": "/flags/flags/europe.png",
+  "type": "autocomplete",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Andorra",
+      "type": "text",
+      "answer": "ad"
+    },
+    {
+      "id": 2,
+      "question": "Albania",
+      "type": "text",
+      "answer": "al"
+    },
+    {
+      "id": 3,
+      "question": "Austria",
+      "type": "text",
+      "answer": "at"
+    },
+    {
+      "id": 4,
+      "question": "Bélgica",
+      "type": "text",
+      "answer": "be"
+    },
+    {
+      "id": 5,
+      "question": "Bulgaria",
+      "type": "text",
+      "answer": "bg"
+    },
+    {
+      "id": 6,
+      "question": "Suiza",
+      "type": "text",
+      "answer": "ch"
+    },
+    {
+      "id": 7,
+      "question": "Chipre",
+      "type": "text",
+      "answer": "cy"
+    },
+    {
+      "id": 8,
+      "question": "Dinamarca",
+      "type": "text",
+      "answer": "dk"
+    },
+    {
+      "id": 9,
+      "question": "Estonia",
+      "type": "text",
+      "answer": "ee"
+    },
+    {
+      "id": 10,
+      "question": "España",
+      "type": "text",
+      "answer": "es"
+    },
+    {
+      "id": 11,
+      "question": "Finlandia",
+      "type": "text",
+      "answer": "fi"
+    },
+    {
+      "id": 12,
+      "question": "Francia",
+      "type": "text",
+      "answer": "fr"
+    },
+    {
+      "id": 13,
+      "question": "Grecia",
+      "type": "text",
+      "answer": "gr"
+    },
+    {
+      "id": 14,
+      "question": "Croacia",
+      "type": "text",
+      "answer": "hr"
+    },
+    {
+      "id": 15,
+      "question": "Hungría",
+      "type": "text",
+      "answer": "hu"
+    },
+    {
+      "id": 16,
+      "question": "Irlanda",
+      "type": "text",
+      "answer": "ie"
+    },
+    {
+      "id": 17,
+      "question": "Italia",
+      "type": "text",
+      "answer": "it"
+    },
+    {
+      "id": 18,
+      "question": "Lituania",
+      "type": "text",
+      "answer": "lt"
+    },
+    {
+      "id": 19,
+      "question": "Luxemburgo",
+      "type": "text",
+      "answer": "lu"
+    },
+    {
+      "id": 20,
+      "question": "Letonia",
+      "type": "text",
+      "answer": "lv"
+    },
+    {
+      "id": 21,
+      "question": "Moldavia",
+      "type": "text",
+      "answer": "md"
+    },
+    {
+      "id": 22,
+      "question": "Montenegro",
+      "type": "text",
+      "answer": "me"
+    },
+    {
+      "id": 23,
+      "question": "Macedonia del Norte",
+      "type": "text",
+      "answer": "mk"
+    },
+    {
+      "id": 24,
+      "question": "Malta",
+      "type": "text",
+      "answer": "mt"
+    },
+    {
+      "id": 25,
+      "question": "Países Bajos",
+      "type": "text",
+      "answer": "nl"
+    },
+    {
+      "id": 26,
+      "question": "Noruega",
+      "type": "text",
+      "answer": "no"
+    },
+    {
+      "id": 27,
+      "question": "Polonia",
+      "type": "text",
+      "answer": "pl"
+    },
+    {
+      "id": 28,
+      "question": "Portugal",
+      "type": "text",
+      "answer": "pt"
+    },
+    {
+      "id": 29,
+      "question": "Rumania",
+      "type": "text",
+      "answer": "ro"
+    },
+    {
+      "id": 30,
+      "question": "Suecia",
+      "type": "text",
+      "answer": "se"
+    },
+    {
+      "id": 31,
+      "question": "Eslovaquia",
+      "type": "text",
+      "answer": "sk"
+    },
+    {
+      "id": 32,
+      "question": "Eslovenia",
+      "type": "text",
+      "answer": "si"
+    },
+    {
+      "id": 33,
+      "question": "Ucrania",
+      "type": "text",
+      "answer": "ua"
+    },
+    {
+      "id": 34,
+      "question": "Reino Unido",
+      "type": "text",
+      "answer": "gb"
+    },
+    {
+      "id": 35,
+      "question": "Vaticano",
+      "type": "text",
+      "answer": "va"
+    },
+    {
+      "id": 36,
+      "question": "Chequia",
+      "type": "text",
+      "answer": "cz"
+    },
+    {
+      "id": 37,
+      "question": "Islandia",
+      "type": "text",
+      "answer": "is"
+    },
+    {
+      "id": 38,
+      "question": "Serbia",
+      "type": "text",
+      "answer": "rs"
+    },
+    {
+      "id": 39,
+      "question": "Bosnia y Herzegovina",
+      "type": "text",
+      "answer": "ba"
+    },
+    {
+      "id": 40,
+      "question": "Alemania",
+      "type": "text",
+      "answer": "de"
+    },
+    {
+      "id": 41,
+      "question": "San Marino",
+      "type": "text",
+      "answer": "sm"
+    },
+    {
+      "id": 42,
+      "question": "Liechtenstein",
+      "type": "text",
+      "answer": "li"
+    },
+    {
+      "id": 43,
+      "question": "Turquía",
+      "type": "text",
+      "answer": "tr"
+    },
+    {
+      "id": 44,
+      "question": "Rusia",
+      "type": "text",
+      "answer": "ru"
+    },
+    {
+      "id": 45,
+      "question": "Mónaco",
+      "type": "text",
+      "answer": "mc"
+    },
+    {
+      "id": 46,
+      "question": "Bielorrusia",
+      "type": "text",
+      "answer": "by"
+    }
+  ],
+  "options": [
+    {
+      "id": "nl",
+      "text": "Ámsterdam"
+    },
+    {
+      "id": "ad",
+      "text": "Andorra la Vella"
+    },
+    {
+      "id": "tr",
+      "text": "Ankara"
+    },
+    {
+      "id": "gr",
+      "text": "Atenas"
+    },
+    {
+      "id": "rs",
+      "text": "Belgrado"
+    },
+    {
+      "id": "de",
+      "text": "Berlin"
+    },
+    {
+      "id": "ch",
+      "text": "Berna"
+    },
+    {
+      "id": "sk",
+      "text": "Bratislava"
+    },
+    {
+      "id": "be",
+      "text": "Bruselas"
+    },
+    {
+      "id": "ro",
+      "text": "Bucarest"
+    },
+    {
+      "id": "hu",
+      "text": "Budapest"
+    },
+    {
+      "id": "md",
+      "text": "Chisináu"
+    },
+    {
+      "id": "dk",
+      "text": "Copenhague"
+    },
+    {
+      "id": "ie",
+      "text": "Dublín"
+    },
+    {
+      "id": "se",
+      "text": "Estocolmo"
+    },
+    {
+      "id": "fi",
+      "text": "Helsinki"
+    },
+    {
+      "id": "ua",
+      "text": "Kiev"
+    },
+    {
+      "id": "mt",
+      "text": "La Valeta"
+    },
+    {
+      "id": "si",
+      "text": "Liubliana"
+    },
+    {
+      "id": "pt",
+      "text": "Lisboa"
+    },
+    {
+      "id": "gb",
+      "text": "Londres"
+    },
+    {
+      "id": "lu",
+      "text": "Luxemburgo"
+    },
+    {
+      "id": "es",
+      "text": "Madrid"
+    },
+    {
+      "id": "by",
+      "text": "Minsk"
+    },
+    {
+      "id": "mc",
+      "text": "Mónaco"
+    },
+    {
+      "id": "ru",
+      "text": "Moscú"
+    },
+    {
+      "id": "cy",
+      "text": "Nicosia"
+    },
+    {
+      "id": "no",
+      "text": "Oslo"
+    },
+    {
+      "id": "fr",
+      "text": "París"
+    },
+    {
+      "id": "me",
+      "text": "Podgorica"
+    },
+    {
+      "id": "cz",
+      "text": "Praga"
+    },
+    {
+      "id": "is",
+      "text": "Reikiavik"
+    },
+    {
+      "id": "lv",
+      "text": "Riga"
+    },
+    {
+      "id": "it",
+      "text": "Roma"
+    },
+    {
+      "id": "sm",
+      "text": "San Marino"
+    },
+    {
+      "id": "ba",
+      "text": "Sarajevo"
+    },
+    {
+      "id": "mk",
+      "text": "Skopie"
+    },
+    {
+      "id": "bg",
+      "text": "Sofía"
+    },
+    {
+      "id": "ee",
+      "text": "Tallin"
+    },
+    {
+      "id": "al",
+      "text": "Tirana"
+    },
+    {
+      "id": "li",
+      "text": "Vaduz"
+    },
+    {
+      "id": "va",
+      "text": "Vaticano"
+    },
+    {
+      "id": "pl",
+      "text": "Varsovia"
+    },
+    {
+      "id": "at",
+      "text": "Viena"
+    },
+    {
+      "id": "lt",
+      "text": "Vilna"
+    },
+    {
+      "id": "hr",
+      "text": "Zagreb"
+    }
+  ]
+}
