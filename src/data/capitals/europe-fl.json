@@ -3,6 +3,7 @@
   "title": "Capitales de Europa (Bandera)",
   "image": "/images/flags/europe.png",
   "type": "autocomplete",
+  "placeholder": "Selecciona la capital...",
   "questions": [
     {
       "id": 1,

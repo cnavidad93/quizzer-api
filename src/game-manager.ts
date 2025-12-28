@@ -205,6 +205,8 @@ export class GameManager {
       question: question.question,
       type: question.type,
       options,
+      placeholder:
+        room.game.type === "autocomplete" ? room.game.placeholder : undefined,
       questionNumber: room.currentQuestionIndex + 1,
       totalQuestions: room.game.questions.length,
     });

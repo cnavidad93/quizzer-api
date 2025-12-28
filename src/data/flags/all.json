@@ -3,6 +3,7 @@
   "title": "Banderas del Mundo",
   "image": "/images/flags/world.png",
   "type": "autocomplete",
+  "placeholder": "Selecciona el país...",
   "questions": [
     {
       "id": 1,

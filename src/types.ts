@@ -1,11 +1,20 @@
-export type Game = {
-  id: string;
-  title: string;
-  image: string;
-  type: "multiple-choice" | "autocomplete";
-  questions: Question[];
-  options?: { id: string; text: string }[];
-};
+export type Game =
+  | {
+      id: string;
+      title: string;
+      image: string;
+      type: "multiple-choice";
+      questions: Question[];
+    }
+  | {
+      id: string;
+      title: string;
+      image: string;
+      type: "autocomplete";
+      questions: Question[];
+      placeholder: string;
+      options: { id: string; text: string }[];
+    };
 
 export type Question = {
   id: number;
@@ -33,6 +42,7 @@ export type QuestionForClient = {
   question: string;
   type: string;
   options: { id: string; text: string }[];
+  placeholder?: string;
   questionNumber: number;
   totalQuestions: number;
 };

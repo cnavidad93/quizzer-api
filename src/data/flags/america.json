@@ -3,6 +3,7 @@
   "title": "Banderas de América",
   "image": "/images/flags/america.png",
   "type": "autocomplete",
+  "placeholder": "Selecciona el país...",
   "questions": [
     {
       "id": 1,
