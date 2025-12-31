@@ -79,6 +79,7 @@ export type ServerMessage =
   | { type: "playerLeft"; playerId: string }
   | { type: "playerReconnected"; playerId: string }
   | { type: "gameStarted"; room: GameRoomData }
+  | { type: "countdownTick"; count: number | null}
   | { type: "timerTick"; timeLeft: number }
   | { type: "playerAnswered"; playerId: string }
   | {

@@ -153,7 +153,7 @@ export class WebSocketHandler {
       delete connections[playerId];
       if (Object.keys(connections).length === 0) {
         this.rooms.delete(roomCode);
-        
+
         const viewerConnections = this.viewers.get(roomCode);
         if (!viewerConnections || Object.keys(viewerConnections).length === 0) {
           this.clearTimer(roomCode);
@@ -189,6 +189,25 @@ export class WebSocketHandler {
       clearInterval(timer);
       this.timers.delete(roomCode);
     }
+  }
+
+  private startCountdown(roomCode: string, timerDuration: number): void {
+    let count = 3;
+
+    this.broadcast(roomCode, { type: "countdownTick", count });
+
+    const countdownInterval = setInterval(() => {
+      count--;
+
+      if (count > 0) {
+        this.broadcast(roomCode, { type: "countdownTick", count });
+      } else {
+        clearInterval(countdownInterval);
+        this.broadcast(roomCode, { type: "countdownTick", count: null });
+
+        this.startQuestionTimer(roomCode, timerDuration);
+      }
+    }, 1000);
   }
 
   private startQuestionTimer(roomCode: string, duration: number): void {
@@ -369,7 +388,9 @@ export class WebSocketHandler {
       type: "gameStarted",
       room: room.toJSON(),
     });
-    this.startQuestionTimer(roomCode, room.timerDuration);
+
+    // Start countdown before the first question
+    this.startCountdown(roomCode, room.timerDuration);
   }
 
   private handleAnswer(
