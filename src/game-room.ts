@@ -1,4 +1,4 @@
-import { loadGame } from "./data/games.js";
+import { loadGame } from "./data/local-data.js";
 import {
   Game,
   GameRoomData,

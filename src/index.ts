@@ -1,8 +1,13 @@
 import { serve } from "@hono/node-server";
+import { serveStatic } from "@hono/node-server/serve-static";
 import { createNodeWebSocket } from "@hono/node-ws";
 import { Hono } from "hono";
 import { cors } from "hono/cors";
-import { loadGames } from "./data/games.js";
+import {
+  loadAvatarAssets,
+  loadAvatarCategories,
+  loadGames,
+} from "./data/local-data.js";
 import { GameManager } from "./game-manager.js";
 import { WebSocketHandler } from "./ws-handler.js";
 
@@ -21,6 +26,14 @@ app.use(
   })
 );
 
+app.use(
+  "/static/*",
+  serveStatic({
+    root: "./",
+    rewriteRequestPath: (path) => path.replace(/^\/static/, "/public"),
+  })
+);
+
 app.get("/health", (c) => c.json({ status: "ok", service: "quizzer-server" }));
 
 app.get("/games", async (c) => {
@@ -33,6 +46,16 @@ app.get("/games", async (c) => {
   }));
 
   return c.json(previews);
+});
+
+app.get("/avatar/categories", async (c) => {
+  const categories = loadAvatarCategories();
+  return c.json(categories);
+});
+
+app.get("/avatar/assets", async (c) => {
+  const assets = loadAvatarAssets();
+  return c.json(assets);
 });
 
 app.post("/room/create", async (c) => {
@@ -59,7 +82,6 @@ app.post("/room/create", async (c) => {
   return c.json(room.toJSON());
 });
 
-// Get room info
 app.get("/room/:code", (c) => {
   const code = c.req.param("code").toUpperCase();
   const roomResult = gameManager.getRoom(code);
@@ -71,7 +93,6 @@ app.get("/room/:code", (c) => {
   return c.json(roomResult.value.toJSON());
 });
 
-// Check if room exists (for joining)
 app.get("/room/:code/exists", (c) => {
   const code = c.req.param("code").toUpperCase();
   const roomResult = gameManager.getRoom(code);
@@ -101,7 +122,6 @@ app.get("/room/:code/exists", (c) => {
   });
 });
 
-// WebSocket endpoint
 app.get(
   "/ws",
   upgradeWebSocket(() => {

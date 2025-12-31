@@ -118,3 +118,51 @@ export type GamePreview = {
   image: string;
   questionsCount: number;
 };
+
+export type AvatarCategory = {
+  cameraPlacement: string;
+  collectionId: string;
+  collectionName: string;
+  colorPalette: string;
+  created: string;
+  expand: {
+    cameraPlacement: {
+      collectionId: string;
+      collectionName: string;
+      created: string;
+      id: string;
+      name: string;
+      position: [number, number, number];
+      target: [number, number, number];
+      updated: string;
+    };
+    colorPalette: {
+      collectionId: string;
+      collectionName: string;
+      colors: string[];
+      created: string;
+      id: string;
+      name: string;
+      updated: string;
+    };
+  };
+  id: string;
+  name: string;
+  position: number;
+  removable: boolean;
+  startingAsset: string;
+  updated: string;
+};
+
+export type AvatarAsset = {
+  collectionId: string;
+  collectionName: string;
+  created: string;
+  group: string;
+  id: string;
+  lockedGroups: string[];
+  name: string;
+  thumbnail: string;
+  updated: string;
+  url: string;
+};
