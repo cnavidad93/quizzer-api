@@ -1,0 +1,471 @@
+{
+  "id": "asia-flags",
+  "title": "Banderas de Asia",
+  "image": "/images/flags/asia.png",
+  "type": "autocomplete",
+  "placeholder": "Selecciona el país...",
+  "questions": [
+    {
+      "id": 1,
+      "question": "https://flagcdn.com/w320/ye.png",
+      "type": "image",
+      "answer": "ye"
+    },
+    {
+      "id": 2,
+      "question": "https://flagcdn.com/w320/mn.png",
+      "type": "image",
+      "answer": "mn"
+    },
+    {
+      "id": 3,
+      "question": "https://flagcdn.com/w320/sa.png",
+      "type": "image",
+      "answer": "sa"
+    },
+    {
+      "id": 4,
+      "question": "https://flagcdn.com/w320/ge.png",
+      "type": "image",
+      "answer": "ge"
+    },
+    {
+      "id": 5,
+      "question": "https://flagcdn.com/w320/il.png",
+      "type": "image",
+      "answer": "il"
+    },
+    {
+      "id": 6,
+      "question": "https://flagcdn.com/w320/jp.png",
+      "type": "image",
+      "answer": "jp"
+    },
+    {
+      "id": 7,
+      "question": "https://flagcdn.com/w320/az.png",
+      "type": "image",
+      "answer": "az"
+    },
+    {
+      "id": 8,
+      "question": "https://flagcdn.com/w320/mv.png",
+      "type": "image",
+      "answer": "mv"
+    },
+    {
+      "id": 9,
+      "question": "https://flagcdn.com/w320/iq.png",
+      "type": "image",
+      "answer": "iq"
+    },
+    {
+      "id": 10,
+      "question": "https://flagcdn.com/w320/qa.png",
+      "type": "image",
+      "answer": "qa"
+    },
+    {
+      "id": 11,
+      "question": "https://flagcdn.com/w320/ae.png",
+      "type": "image",
+      "answer": "ae"
+    },
+    {
+      "id": 12,
+      "question": "https://flagcdn.com/w320/ph.png",
+      "type": "image",
+      "answer": "ph"
+    },
+    {
+      "id": 13,
+      "question": "https://flagcdn.com/w320/bd.png",
+      "type": "image",
+      "answer": "bd"
+    },
+    {
+      "id": 14,
+      "question": "https://flagcdn.com/w320/kz.png",
+      "type": "image",
+      "answer": "kz"
+    },
+    {
+      "id": 15,
+      "question": "https://flagcdn.com/w320/sg.png",
+      "type": "image",
+      "answer": "sg"
+    },
+    {
+      "id": 16,
+      "question": "https://flagcdn.com/w320/my.png",
+      "type": "image",
+      "answer": "my"
+    },
+    {
+      "id": 17,
+      "question": "https://flagcdn.com/w320/am.png",
+      "type": "image",
+      "answer": "am"
+    },
+    {
+      "id": 18,
+      "question": "https://flagcdn.com/w320/tj.png",
+      "type": "image",
+      "answer": "tj"
+    },
+    {
+      "id": 19,
+      "question": "https://flagcdn.com/w320/th.png",
+      "type": "image",
+      "answer": "th"
+    },
+    {
+      "id": 20,
+      "question": "https://flagcdn.com/w320/id.png",
+      "type": "image",
+      "answer": "id"
+    },
+    {
+      "id": 21,
+      "question": "https://flagcdn.com/w320/tm.png",
+      "type": "image",
+      "answer": "tm"
+    },
+    {
+      "id": 22,
+      "question": "https://flagcdn.com/w320/bh.png",
+      "type": "image",
+      "answer": "bh"
+    },
+    {
+      "id": 23,
+      "question": "https://flagcdn.com/w320/om.png",
+      "type": "image",
+      "answer": "om"
+    },
+    {
+      "id": 24,
+      "question": "https://flagcdn.com/w320/vn.png",
+      "type": "image",
+      "answer": "vn"
+    },
+    {
+      "id": 25,
+      "question": "https://flagcdn.com/w320/kh.png",
+      "type": "image",
+      "answer": "kh"
+    },
+    {
+      "id": 26,
+      "question": "https://flagcdn.com/w320/tl.png",
+      "type": "image",
+      "answer": "tl"
+    },
+    {
+      "id": 27,
+      "question": "https://flagcdn.com/w320/kr.png",
+      "type": "image",
+      "answer": "kr"
+    },
+    {
+      "id": 28,
+      "question": "https://flagcdn.com/w320/sy.png",
+      "type": "image",
+      "answer": "sy"
+    },
+    {
+      "id": 29,
+      "question": "https://flagcdn.com/w320/bn.png",
+      "type": "image",
+      "answer": "bn"
+    },
+    {
+      "id": 30,
+      "question": "https://flagcdn.com/w320/np.png",
+      "type": "image",
+      "answer": "np"
+    },
+    {
+      "id": 31,
+      "question": "https://flagcdn.com/w320/kw.png",
+      "type": "image",
+      "answer": "kw"
+    },
+    {
+      "id": 32,
+      "question": "https://flagcdn.com/w320/jo.png",
+      "type": "image",
+      "answer": "jo"
+    },
+    {
+      "id": 33,
+      "question": "https://flagcdn.com/w320/tw.png",
+      "type": "image",
+      "answer": "tw"
+    },
+    {
+      "id": 34,
+      "question": "https://flagcdn.com/w320/af.png",
+      "type": "image",
+      "answer": "af"
+    },
+    {
+      "id": 35,
+      "question": "https://flagcdn.com/w320/lb.png",
+      "type": "image",
+      "answer": "lb"
+    },
+    {
+      "id": 36,
+      "question": "https://flagcdn.com/w320/ru.png",
+      "type": "image",
+      "answer": "ru"
+    },
+    {
+      "id": 37,
+      "question": "https://flagcdn.com/w320/bt.png",
+      "type": "image",
+      "answer": "bt"
+    },
+    {
+      "id": 38,
+      "question": "https://flagcdn.com/w320/pk.png",
+      "type": "image",
+      "answer": "pk"
+    },
+    {
+      "id": 39,
+      "question": "https://flagcdn.com/w320/uz.png",
+      "type": "image",
+      "answer": "uz"
+    },
+    {
+      "id": 40,
+      "question": "https://flagcdn.com/w320/kg.png",
+      "type": "image",
+      "answer": "kg"
+    },
+    {
+      "id": 41,
+      "question": "https://flagcdn.com/w320/la.png",
+      "type": "image",
+      "answer": "la"
+    },
+    {
+      "id": 42,
+      "question": "https://flagcdn.com/w320/kp.png",
+      "type": "image",
+      "answer": "kp"
+    },
+    {
+      "id": 43,
+      "question": "https://flagcdn.com/w320/ir.png",
+      "type": "image",
+      "answer": "ir"
+    },
+    {
+      "id": 44,
+      "question": "https://flagcdn.com/w320/lk.png",
+      "type": "image",
+      "answer": "lk"
+    },
+    {
+      "id": 45,
+      "question": "https://flagcdn.com/w320/mm.png",
+      "type": "image",
+      "answer": "mm"
+    },
+    {
+      "id": 46,
+      "question": "https://flagcdn.com/w320/cn.png",
+      "type": "image",
+      "answer": "cn"
+    }
+  ],
+  "options": [
+    {
+      "id": "af",
+      "label": "Afganistán"
+    },
+    {
+      "id": "sa",
+      "label": "Arabia Saudita"
+    },
+    {
+      "id": "am",
+      "label": "Armenia"
+    },
+    {
+      "id": "az",
+      "label": "Azerbaiján"
+    },
+    {
+      "id": "bh",
+      "label": "Bahrein"
+    },
+    {
+      "id": "bd",
+      "label": "Bangladesh"
+    },
+    {
+      "id": "bt",
+      "label": "Bután"
+    },
+    {
+      "id": "mm",
+      "label": "Birmania"
+    },
+    {
+      "id": "bn",
+      "label": "Brunei"
+    },
+    {
+      "id": "kh",
+      "label": "Camboya"
+    },
+    {
+      "id": "qa",
+      "label": "Catar"
+    },
+    {
+      "id": "cn",
+      "label": "China"
+    },
+    {
+      "id": "kr",
+      "label": "Corea del Sur"
+    },
+    {
+      "id": "kp",
+      "label": "Corea del Norte"
+    },
+    {
+      "id": "ae",
+      "label": "Emiratos Árabes Unidos"
+    },
+    {
+      "id": "ph",
+      "label": "Filipinas"
+    },
+    {
+      "id": "ge",
+      "label": "Georgia"
+    },
+    {
+      "id": "id",
+      "label": "Indonesia"
+    },
+    {
+      "id": "iq",
+      "label": "Irak"
+    },
+    {
+      "id": "ir",
+      "label": "Irán"
+    },
+    {
+      "id": "il",
+      "label": "Israel"
+    },
+    {
+      "id": "jp",
+      "label": "Japón"
+    },
+    {
+      "id": "jo",
+      "label": "Jordania"
+    },
+    {
+      "id": "kz",
+      "label": "Kazajistán"
+    },
+    {
+      "id": "kg",
+      "label": "Kiriguizistán"
+    },
+    {
+      "id": "kw",
+      "label": "Kuwait"
+    },
+    {
+      "id": "la",
+      "label": "Laos"
+    },
+    {
+      "id": "lb",
+      "label": "Líbano"
+    },
+    {
+      "id": "my",
+      "label": "Malasia"
+    },
+    {
+      "id": "mv",
+      "label": "Maldivas"
+    },
+    {
+      "id": "mn",
+      "label": "Mongolia"
+    },
+    {
+      "id": "np",
+      "label": "Nepal"
+    },
+    {
+      "id": "om",
+      "label": "Omán"
+    },
+    {
+      "id": "pk",
+      "label": "Pakistán"
+    },
+    {
+      "id": "ru",
+      "label": "Rusia"
+    },
+    {
+      "id": "sg",
+      "label": "Singapur"
+    },
+    {
+      "id": "sy",
+      "label": "Siria"
+    },
+    {
+      "id": "lk",
+      "label": "Sri Lanka"
+    },
+    {
+      "id": "tw",
+      "label": "Taiwan"
+    },
+    {
+      "id": "tj",
+      "label": "Tayikistán"
+    },
+    {
+      "id": "th",
+      "label": "Tailandia"
+    },
+    {
+      "id": "tl",
+      "label": "Timor Oriental"
+    },
+    {
+      "id": "tm",
+      "label": "Turkmenistán"
+    },
+    {
+      "id": "uz",
+      "label": "Uzbekistán"
+    },
+    {
+      "id": "vn",
+      "label": "Vietnam"
+    },
+    {
+      "id": "ye",
+      "label": "Yemen"
+    }
+  ]
+}

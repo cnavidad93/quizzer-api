@@ -285,187 +285,187 @@
   "options": [
     {
       "id": "nl",
-      "text": "Ámsterdam"
+      "label": "Ámsterdam"
     },
     {
       "id": "ad",
-      "text": "Andorra la Vella"
+      "label": "Andorra la Vella"
     },
     {
       "id": "tr",
-      "text": "Ankara"
+      "label": "Ankara"
     },
     {
       "id": "gr",
-      "text": "Atenas"
+      "label": "Atenas"
     },
     {
       "id": "rs",
-      "text": "Belgrado"
+      "label": "Belgrado"
     },
     {
       "id": "de",
-      "text": "Berlin"
+      "label": "Berlin"
     },
     {
       "id": "ch",
-      "text": "Berna"
+      "label": "Berna"
     },
     {
       "id": "sk",
-      "text": "Bratislava"
+      "label": "Bratislava"
     },
     {
       "id": "be",
-      "text": "Bruselas"
+      "label": "Bruselas"
     },
     {
       "id": "ro",
-      "text": "Bucarest"
+      "label": "Bucarest"
     },
     {
       "id": "hu",
-      "text": "Budapest"
+      "label": "Budapest"
     },
     {
       "id": "md",
-      "text": "Chisináu"
+      "label": "Chisináu"
     },
     {
       "id": "dk",
-      "text": "Copenhague"
+      "label": "Copenhague"
     },
     {
       "id": "ie",
-      "text": "Dublín"
+      "label": "Dublín"
     },
     {
       "id": "se",
-      "text": "Estocolmo"
+      "label": "Estocolmo"
     },
     {
       "id": "fi",
-      "text": "Helsinki"
+      "label": "Helsinki"
     },
     {
       "id": "ua",
-      "text": "Kiev"
+      "label": "Kiev"
     },
     {
       "id": "mt",
-      "text": "La Valeta"
+      "label": "La Valeta"
     },
     {
       "id": "si",
-      "text": "Liubliana"
+      "label": "Liubliana"
     },
     {
       "id": "pt",
-      "text": "Lisboa"
+      "label": "Lisboa"
     },
     {
       "id": "gb",
-      "text": "Londres"
+      "label": "Londres"
     },
     {
       "id": "lu",
-      "text": "Luxemburgo"
+      "label": "Luxemburgo"
     },
     {
       "id": "es",
-      "text": "Madrid"
+      "label": "Madrid"
     },
     {
       "id": "by",
-      "text": "Minsk"
+      "label": "Minsk"
     },
     {
       "id": "mc",
-      "text": "Mónaco"
+      "label": "Mónaco"
     },
     {
       "id": "ru",
-      "text": "Moscú"
+      "label": "Moscú"
     },
     {
       "id": "cy",
-      "text": "Nicosia"
+      "label": "Nicosia"
     },
     {
       "id": "no",
-      "text": "Oslo"
+      "label": "Oslo"
     },
     {
       "id": "fr",
-      "text": "París"
+      "label": "París"
     },
     {
       "id": "me",
-      "text": "Podgorica"
+      "label": "Podgorica"
     },
     {
       "id": "cz",
-      "text": "Praga"
+      "label": "Praga"
     },
     {
       "id": "is",
-      "text": "Reikiavik"
+      "label": "Reikiavik"
     },
     {
       "id": "lv",
-      "text": "Riga"
+      "label": "Riga"
     },
     {
       "id": "it",
-      "text": "Roma"
+      "label": "Roma"
     },
     {
       "id": "sm",
-      "text": "San Marino"
+      "label": "San Marino"
     },
     {
       "id": "ba",
-      "text": "Sarajevo"
+      "label": "Sarajevo"
     },
     {
       "id": "mk",
-      "text": "Skopie"
+      "label": "Skopie"
     },
     {
       "id": "bg",
-      "text": "Sofía"
+      "label": "Sofía"
     },
     {
       "id": "ee",
-      "text": "Tallin"
+      "label": "Tallin"
     },
     {
       "id": "al",
-      "text": "Tirana"
+      "label": "Tirana"
     },
     {
       "id": "li",
-      "text": "Vaduz"
+      "label": "Vaduz"
     },
     {
       "id": "va",
-      "text": "Vaticano"
+      "label": "Vaticano"
     },
     {
       "id": "pl",
-      "text": "Varsovia"
+      "label": "Varsovia"
     },
     {
       "id": "at",
-      "text": "Viena"
+      "label": "Viena"
     },
     {
       "id": "lt",
-      "text": "Vilna"
+      "label": "Vilna"
     },
     {
       "id": "hr",
-      "text": "Zagreb"
+      "label": "Zagreb"
     }
   ]
 }

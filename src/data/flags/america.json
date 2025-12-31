@@ -219,143 +219,143 @@
   "options": [
     {
       "id": "ag",
-      "text": "Antigua y Barbuda"
+      "label": "Antigua y Barbuda"
     },
     {
       "id": "ar",
-      "text": "Argentina"
+      "label": "Argentina"
     },
     {
       "id": "bs",
-      "text": "Bahamas"
+      "label": "Bahamas"
     },
     {
       "id": "bb",
-      "text": "Barbados"
+      "label": "Barbados"
     },
     {
       "id": "bz",
-      "text": "Belice"
+      "label": "Belice"
     },
     {
       "id": "bo",
-      "text": "Bolivia"
+      "label": "Bolivia"
     },
     {
       "id": "br",
-      "text": "Brasil"
+      "label": "Brasil"
     },
     {
       "id": "ca",
-      "text": "Canadá"
+      "label": "Canadá"
     },
     {
       "id": "cl",
-      "text": "Chile"
+      "label": "Chile"
     },
     {
       "id": "co",
-      "text": "Colombia"
+      "label": "Colombia"
     },
     {
       "id": "cr",
-      "text": "Costa Rica"
+      "label": "Costa Rica"
     },
     {
       "id": "cu",
-      "text": "Cuba"
+      "label": "Cuba"
     },
     {
       "id": "dm",
-      "text": "Dominica"
+      "label": "Dominica"
     },
     {
       "id": "ec",
-      "text": "Ecuador"
+      "label": "Ecuador"
     },
     {
       "id": "sv",
-      "text": "El Salvador"
+      "label": "El Salvador"
     },
     {
       "id": "us",
-      "text": "Estados Unidos"
+      "label": "Estados Unidos"
     },
     {
       "id": "gd",
-      "text": "Granada"
+      "label": "Granada"
     },
     {
       "id": "gt",
-      "text": "Guatemala"
+      "label": "Guatemala"
     },
     {
       "id": "gy",
-      "text": "Guyana"
+      "label": "Guyana"
     },
     {
       "id": "ht",
-      "text": "Haití"
+      "label": "Haití"
     },
     {
       "id": "hn",
-      "text": "Honduras"
+      "label": "Honduras"
     },
     {
       "id": "jm",
-      "text": "Jamaica"
+      "label": "Jamaica"
     },
     {
       "id": "mx",
-      "text": "México"
+      "label": "México"
     },
     {
       "id": "ni",
-      "text": "Nicaragua"
+      "label": "Nicaragua"
     },
     {
       "id": "pa",
-      "text": "Panamá"
+      "label": "Panamá"
     },
     {
       "id": "py",
-      "text": "Paraguay"
+      "label": "Paraguay"
     },
     {
       "id": "pe",
-      "text": "Perú"
+      "label": "Perú"
     },
     {
       "id": "do",
-      "text": "República Dominicana"
+      "label": "República Dominicana"
     },
     {
       "id": "kn",
-      "text": "San Cristóbal y Nieves"
+      "label": "San Cristóbal y Nieves"
     },
     {
       "id": "vc",
-      "text": "San Vicente y las Granadinas"
+      "label": "San Vicente y las Granadinas"
     },
     {
       "id": "lc",
-      "text": "Santa Lucía"
+      "label": "Santa Lucía"
     },
     {
       "id": "sr",
-      "text": "Surinam"
+      "label": "Surinam"
     },
     {
       "id": "tt",
-      "text": "Trinidad y Tobago"
+      "label": "Trinidad y Tobago"
     },
     {
       "id": "uy",
-      "text": "Uruguay"
+      "label": "Uruguay"
     },
     {
       "id": "ve",
-      "text": "Venezuela"
+      "label": "Venezuela"
     }
   ]
 }

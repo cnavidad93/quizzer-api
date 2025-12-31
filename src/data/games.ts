@@ -1,12 +1,13 @@
 import europeFlags from "./flags/europe.json" with { type: "json" };
 import americaFlags from "./flags/america.json" with { type: "json" };
+import asiaFlags from "./flags/asia.json" with { type: "json" };
 import allFlags from "./flags/all.json" with { type: "json" };
 import europeCapitals from "./capitals/europe.json" with { type: "json" };
 import europeCapitalsFl from "./capitals/europe-fl.json" with { type: "json" };
 
 import { Game, Question } from "@/types";
 
-const games = [europeFlags, americaFlags, allFlags, europeCapitals, europeCapitalsFl] as Game[];
+const games = [europeFlags, americaFlags, asiaFlags,allFlags, europeCapitals, europeCapitalsFl] as Game[];
 
 export function loadGames(): Promise<Game[]> {
   return Promise.resolve(games);

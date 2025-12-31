@@ -37,6 +37,7 @@ export class GameRoom {
       id: user.playerId,
       username: user.username,
       profilePicture: user.profilePicture,
+      mode: user.mode,
       score: 0,
       hasAnswered: false,
       isConnected: true,
@@ -59,7 +60,7 @@ export class GameRoom {
     }
   }
 
-  addViewer(user: User) {
+  addViewer(user: Pick<User, "playerId">) {
     this.viewers.push({
       id: user.playerId,
       isConnected: true,

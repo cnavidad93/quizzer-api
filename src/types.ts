@@ -5,6 +5,7 @@ export type Game =
       image: string;
       type: "multiple-choice";
       questions: Question[];
+      options: QuestionForClient["options"];
     }
   | {
       id: string;
@@ -13,7 +14,7 @@ export type Game =
       type: "autocomplete";
       questions: Question[];
       placeholder: string;
-      options: { id: string; text: string }[];
+      options: QuestionForClient["options"];
     };
 
 export type Question = {
@@ -24,9 +25,10 @@ export type Question = {
 };
 
 export type Player = {
-  id: string;
-  username: string;
-  profilePicture: string;
+  id: User["playerId"];
+  username: User["username"];
+  profilePicture: User["profilePicture"];
+  mode: User["mode"];
   score: number;
   hasAnswered: boolean;
   isConnected: boolean;
@@ -41,7 +43,8 @@ export type QuestionForClient = {
   id: number;
   question: string;
   type: string;
-  options: { id: string; text: string }[];
+  options: { id: string; label: string }[];
+  kidOptions: { id: string; label: string }[];
   placeholder?: string;
   questionNumber: number;
   totalQuestions: number;
@@ -55,6 +58,7 @@ export type ClientMessage =
       username: string;
       playerId: string;
       profilePicture: string;
+      mode: "pro" | "kid";
     }
   | {
       type: "joinAsViewer";
@@ -92,6 +96,7 @@ export type User = {
   playerId: string;
   username: string;
   profilePicture: string;
+  mode: "pro" | "kid";
 };
 
 export type GameRoomData = {

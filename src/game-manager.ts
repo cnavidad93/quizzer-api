@@ -75,6 +75,9 @@ export class GameManager {
         existingPlayer.isConnected = true;
         existingPlayer.username = user.username;
         existingPlayer.profilePicture = user.profilePicture;
+        existingPlayer.mode = user.mode;
+        existingPlayer.hasAnswered = false;
+        existingPlayer.score = 0;
         this.saveRoom(room);
         return ok(room);
       }
@@ -181,19 +184,10 @@ export class GameManager {
     }
 
     let options: QuestionForClient["options"] = [];
+    const multipleChoiceOptions = this.generateMultipleChoiceOptions(room);
 
     if (room.game.type === "multiple-choice") {
-      // Generate 3 wrong options
-      const wrongAnswers = room.game.questions
-        .filter((q) => q.answer !== question.answer)
-        .map((q) => ({ id: q.id.toString(), text: q.answer }))
-        .sort(() => Math.random() - 0.5)
-        .slice(0, 3);
-
-      options = [
-        ...wrongAnswers,
-        { id: question.id.toString(), text: question.answer },
-      ].sort(() => Math.random() - 0.5);
+      options = multipleChoiceOptions;
     } else if (room.game.type === "autocomplete") {
       options = room.game.options || [];
     } else {
@@ -205,6 +199,7 @@ export class GameManager {
       question: question.question,
       type: question.type,
       options,
+      kidOptions: multipleChoiceOptions,
       placeholder:
         room.game.type === "autocomplete" ? room.game.placeholder : undefined,
       questionNumber: room.currentQuestionIndex + 1,
@@ -331,5 +326,26 @@ export class GameManager {
       return err("Could not generate room code");
     }
     return ok(code);
+  }
+
+  private generateMultipleChoiceOptions(
+    room: GameRoom
+  ): QuestionForClient["options"] {
+    const question = room.game?.questions[room.currentQuestionIndex];
+    if (!question) return [];
+
+    const options = room.game?.options || [];
+
+    const correctAnswer = options.find((o) => o.id === question.answer);
+
+    const wrongAnswers =
+      room.game?.options
+        .filter((o) => o.id !== question.answer)
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 3) || [];
+
+    if (!correctAnswer || !wrongAnswers) return [];
+
+    return [correctAnswer, ...wrongAnswers].sort(() => Math.random() - 0.5);
   }
 }

@@ -38,7 +38,8 @@ export class WebSocketHandler {
             message.roomCode,
             message.playerId,
             message.username,
-            message.profilePicture
+            message.profilePicture,
+            message.mode
           );
           break;
 
@@ -190,6 +191,8 @@ export class WebSocketHandler {
 
     let timeLeft = duration;
 
+    this.broadcast(roomCode, { type: "timerTick", timeLeft });
+
     const timer = setInterval(async () => {
       timeLeft--;
 
@@ -270,12 +273,14 @@ export class WebSocketHandler {
     roomCode: string,
     playerId: string,
     username: string,
-    profilePicture: string
+    profilePicture: string,
+    mode: "pro" | "kid"
   ): void {
     const roomResult = this.gameManager.joinRoom(roomCode, {
       playerId,
       username,
       profilePicture,
+      mode,
     });
 
     if (roomResult.isErr()) {
@@ -332,7 +337,7 @@ export class WebSocketHandler {
     }
 
     const room = roomResult.value;
-    room.addViewer({ playerId: viewerId, username: "", profilePicture: "" });
+    room.addViewer({ playerId: viewerId });
 
     this.addViewerConnection(roomCode, viewerId, ws);
     this.send(ws, { type: "roomState", room: room.toJSON() });

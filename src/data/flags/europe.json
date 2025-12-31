@@ -285,187 +285,187 @@
   "options": [
     {
       "id": "al",
-      "text": "Albania"
+      "label": "Albania"
     },
     {
       "id": "de",
-      "text": "Alemania"
+      "label": "Alemania"
     },
     {
       "id": "ad",
-      "text": "Andorra"
+      "label": "Andorra"
     },
     {
       "id": "at",
-      "text": "Austria"
+      "label": "Austria"
     },
     {
       "id": "be",
-      "text": "Belgica"
+      "label": "Belgica"
     },
     {
       "id": "by",
-      "text": "Bielorrusia"
+      "label": "Bielorrusia"
     },
     {
       "id": "ba",
-      "text": "Bosnia y Herzegovina"
+      "label": "Bosnia y Herzegovina"
     },
     {
       "id": "bg",
-      "text": "Bulgaria"
+      "label": "Bulgaria"
     },
     {
       "id": "cz",
-      "text": "Chequia"
+      "label": "Chequia"
     },
     {
       "id": "cy",
-      "text": "Chipre"
+      "label": "Chipre"
     },
     {
       "id": "hr",
-      "text": "Croacia"
+      "label": "Croacia"
     },
     {
       "id": "dk",
-      "text": "Dinamarca"
+      "label": "Dinamarca"
     },
     {
       "id": "sk",
-      "text": "Eslovaquia"
+      "label": "Eslovaquia"
     },
     {
       "id": "si",
-      "text": "Eslovenia"
+      "label": "Eslovenia"
     },
     {
       "id": "es",
-      "text": "España"
+      "label": "España"
     },
     {
       "id": "ee",
-      "text": "Estonia"
+      "label": "Estonia"
     },
     {
       "id": "fi",
-      "text": "Finlandia"
+      "label": "Finlandia"
     },
     {
       "id": "fr",
-      "text": "Francia"
+      "label": "Francia"
     },
     {
       "id": "gr",
-      "text": "Grecia"
+      "label": "Grecia"
     },
     {
       "id": "hu",
-      "text": "Hungría"
+      "label": "Hungría"
     },
     {
       "id": "ie",
-      "text": "Irlanda"
+      "label": "Irlanda"
     },
     {
       "id": "is",
-      "text": "Islandia"
+      "label": "Islandia"
     },
     {
       "id": "it",
-      "text": "Italia"
+      "label": "Italia"
     },
     {
       "id": "lv",
-      "text": "Letonia"
+      "label": "Letonia"
     },
     {
       "id": "li",
-      "text": "Liechtenstein"
+      "label": "Liechtenstein"
     },
     {
       "id": "lt",
-      "text": "Lituania"
+      "label": "Lituania"
     },
     {
       "id": "lu",
-      "text": "Luxemburgo"
+      "label": "Luxemburgo"
     },
     {
       "id": "mk",
-      "text": "Macedonia del Norte"
+      "label": "Macedonia del Norte"
     },
     {
       "id": "mt",
-      "text": "Malta"
+      "label": "Malta"
     },
     {
       "id": "md",
-      "text": "Moldavia"
+      "label": "Moldavia"
     },
     {
       "id": "mc",
-      "text": "Mónaco"
+      "label": "Mónaco"
     },
     {
       "id": "me",
-      "text": "Montenegro"
+      "label": "Montenegro"
     },
     {
       "id": "no",
-      "text": "Noruega"
+      "label": "Noruega"
     },
     {
       "id": "nl",
-      "text": "Países Bajos"
+      "label": "Países Bajos"
     },
     {
       "id": "pl",
-      "text": "Polonia"
+      "label": "Polonia"
     },
     {
       "id": "pt",
-      "text": "Portugal"
+      "label": "Portugal"
     },
     {
       "id": "gb",
-      "text": "Reino Unido"
+      "label": "Reino Unido"
     },
     {
       "id": "ro",
-      "text": "Rumania"
+      "label": "Rumania"
     },
     {
       "id": "ru",
-      "text": "Rusia"
+      "label": "Rusia"
     },
     {
       "id": "sm",
-      "text": "San Marino"
+      "label": "San Marino"
     },
     {
       "id": "rs",
-      "text": "Serbia"
+      "label": "Serbia"
     },
     {
       "id": "se",
-      "text": "Suecia"
+      "label": "Suecia"
     },
     {
       "id": "ch",
-      "text": "Suiza"
+      "label": "Suiza"
     },
     {
       "id": "tr",
-      "text": "Turquía"
+      "label": "Turquía"
     },
     {
       "id": "ua",
-      "text": "Ucrania"
+      "label": "Ucrania"
     },
     {
       "id": "va",
-      "text": "Vaticano"
+      "label": "Vaticano"
     }
   ]
 }
