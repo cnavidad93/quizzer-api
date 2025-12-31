@@ -11,9 +11,12 @@ export class GameManager {
 
   constructor() {}
 
-  createRoom(creatorId: string): GameManagerActionResult<GameRoom> {
+  createRoom(
+    creatorId: string,
+    seed?: string
+  ): GameManagerActionResult<GameRoom> {
     try {
-      const codeResult = this.generateGameRoomCode();
+      const codeResult = this.generateGameRoomCode(seed);
       if (codeResult.isErr()) {
         return err(codeResult.error);
       }
@@ -54,9 +57,9 @@ export class GameManager {
 
   joinRoom(code: string, user: User): GameManagerActionResult<GameRoom> {
     try {
-      const roomResult = this.getRoom(code);
+      const roomResult = this.getOrCreateRoom(code, user.playerId);
       if (roomResult.isErr()) {
-        return err("Room not found");
+        return err(roomResult.error);
       }
 
       const room = roomResult.value;
@@ -171,9 +174,7 @@ export class GameManager {
     return ok(room);
   }
 
-  resetGame(
-    code: string,
-  ): GameManagerActionResult<GameRoom> {
+  resetGame(code: string): GameManagerActionResult<GameRoom> {
     const roomResult = this.getRoom(code);
     if (roomResult.isErr()) {
       return err("Room not found");
@@ -189,42 +190,6 @@ export class GameManager {
 
     this.saveRoom(room);
     return ok(room);
-  }
-
-  private generateQuestion(
-    room: GameRoom
-  ): GameManagerActionResult<QuestionForClient> {
-    if (!room.game) {
-      return err("Game not loaded");
-    }
-
-    const question = room.game.questions[room.currentQuestionIndex];
-    if (!question) {
-      return err("No more questions available");
-    }
-
-    let options: QuestionForClient["options"] = [];
-    const multipleChoiceOptions = this.generateMultipleChoiceOptions(room);
-
-    if (room.game.type === "multiple-choice") {
-      options = multipleChoiceOptions;
-    } else if (room.game.type === "autocomplete") {
-      options = room.game.options || [];
-    } else {
-      options = [];
-    }
-
-    return ok({
-      id: question.id,
-      question: question.question,
-      type: question.type,
-      options,
-      kidOptions: multipleChoiceOptions,
-      placeholder:
-        room.game.type === "autocomplete" ? room.game.placeholder : undefined,
-      questionNumber: room.currentQuestionIndex + 1,
-      totalQuestions: room.game.questions.length,
-    });
   }
 
   submitAnswer(
@@ -331,9 +296,63 @@ export class GameManager {
     return ok(undefined);
   }
 
-  private generateGameRoomCode(): GameManagerActionResult<string> {
+  private getOrCreateRoom(
+    code: string,
+    creatorId: string
+  ): GameManagerActionResult<GameRoom> {
+    let roomResult = this.getRoom(code);
+    if (roomResult.isErr()) {
+      roomResult = this.createRoom(creatorId, code);
+      if (roomResult.isErr()) {
+        return err(roomResult.error);
+      }
+    }
+    return roomResult;
+  }
+
+  private generateQuestion(
+    room: GameRoom
+  ): GameManagerActionResult<QuestionForClient> {
+    if (!room.game) {
+      return err("Game not loaded");
+    }
+
+    const question = room.game.questions[room.currentQuestionIndex];
+    if (!question) {
+      return err("No more questions available");
+    }
+
+    let options: QuestionForClient["options"] = [];
+    const multipleChoiceOptions = this.generateMultipleChoiceOptions(room);
+
+    if (room.game.type === "multiple-choice") {
+      options = multipleChoiceOptions;
+    } else if (room.game.type === "autocomplete") {
+      options = room.game.options || [];
+    } else {
+      options = [];
+    }
+
+    return ok({
+      id: question.id,
+      question: question.question,
+      type: question.type,
+      options,
+      kidOptions: multipleChoiceOptions,
+      placeholder:
+        room.game.type === "autocomplete" ? room.game.placeholder : undefined,
+      questionNumber: room.currentQuestionIndex + 1,
+      totalQuestions: room.game.questions.length,
+    });
+  }
+
+  private generateGameRoomCode(
+    seed: string | undefined
+  ): GameManagerActionResult<string> {
     let code: string;
     let attempts = 0;
+
+    if (seed) return ok(seed);
 
     do {
       code = generateRoomCode();
