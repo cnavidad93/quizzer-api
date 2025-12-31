@@ -40,6 +40,7 @@ app.post("/room/create", async (c) => {
     playerId: string;
     username: string;
     profilePicture: string;
+    mode: "pro" | "kid";
   }>();
 
   if (!user.playerId || !user.username) {

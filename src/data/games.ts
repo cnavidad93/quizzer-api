@@ -7,7 +7,7 @@ import europeCapitalsFl from "./capitals/europe-fl.json" with { type: "json" };
 
 import { Game, Question } from "@/types";
 
-const games = [europeFlags, americaFlags, asiaFlags,allFlags, europeCapitals, europeCapitalsFl] as Game[];
+const games = [europeFlags, americaFlags, asiaFlags, allFlags, europeCapitals, europeCapitalsFl] as Game[];
 
 export function loadGames(): Promise<Game[]> {
   return Promise.resolve(games);
