@@ -85,6 +85,13 @@ export class GameRoom {
     this.timerDuration = config.timerDuration;
   }
 
+  resetGame(): void {
+    this.game = null;
+    this.status = "waiting";
+    this.startedAt = null;
+    this.currentQuestionIndex = 0;
+  }
+
   toJSON(): GameRoomData {
     return {
       code: this.code,

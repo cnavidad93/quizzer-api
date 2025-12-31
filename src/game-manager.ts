@@ -171,6 +171,26 @@ export class GameManager {
     return ok(room);
   }
 
+  resetGame(
+    code: string,
+  ): GameManagerActionResult<GameRoom> {
+    const roomResult = this.getRoom(code);
+    if (roomResult.isErr()) {
+      return err("Room not found");
+    }
+
+    const room = roomResult.value;
+    room.resetGame();
+
+    room.players.forEach((p) => {
+      p.hasAnswered = false;
+      p.score = 0;
+    });
+
+    this.saveRoom(room);
+    return ok(room);
+  }
+
   private generateQuestion(
     room: GameRoom
   ): GameManagerActionResult<QuestionForClient> {

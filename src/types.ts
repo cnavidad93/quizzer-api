@@ -69,7 +69,8 @@ export type ClientMessage =
   | { type: "leave"; roomCode: string; playerId: string }
   | { type: "start"; roomCode: string; gameId: string; timerDuration: number }
   | { type: "answer"; roomCode: string; playerId: string; answer: string }
-  | { type: "nextQuestion"; roomCode: string };
+  | { type: "nextQuestion"; roomCode: string }
+  | { type: "newGame"; roomCode: string };
 
 export type ServerMessage =
   | { type: "roomState"; room: GameRoomData }
@@ -87,6 +88,7 @@ export type ServerMessage =
     }
   | { type: "newQuestion"; question: QuestionForClient }
   | { type: "gameEnded"; finalScores: Player[] }
+  | { type: "gameReset"; room: GameRoomData }
   | { type: "error"; message: string };
 
 export const MAX_PLAYERS = 10;

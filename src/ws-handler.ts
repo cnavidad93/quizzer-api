@@ -75,6 +75,10 @@ export class WebSocketHandler {
         case "nextQuestion":
           this.handleNextQuestion(message.roomCode);
           break;
+
+        case "newGame":
+          this.handleNewGame(message.roomCode);
+          break;
       }
     } catch (error) {
       const errorMessage =
@@ -149,6 +153,7 @@ export class WebSocketHandler {
       delete connections[playerId];
       if (Object.keys(connections).length === 0) {
         this.rooms.delete(roomCode);
+        
         const viewerConnections = this.viewers.get(roomCode);
         if (!viewerConnections || Object.keys(viewerConnections).length === 0) {
           this.clearTimer(roomCode);
@@ -391,5 +396,16 @@ export class WebSocketHandler {
       this.clearTimer(roomCode);
       this.handleTimeUp(roomCode);
     }
+  }
+
+  private handleNewGame(roomCode: string): void {
+    const result = this.gameManager.resetGame(roomCode);
+    if (result.isErr()) return;
+
+    const room = result.value;
+    this.broadcast(roomCode, {
+      type: "gameReset",
+      room: room.toJSON(),
+    });
   }
 }
