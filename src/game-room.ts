@@ -53,6 +53,10 @@ export class GameRoom {
     this.players = this.players.filter((p) => p.id !== playerId);
   }
 
+  getConnectedPlayers(): Player[] {
+    return this.players.filter((p) => p.isConnected);
+  }
+
   disconnectPlayer(playerId: string): void {
     const player = this.getPlayer(playerId);
     if (player) {

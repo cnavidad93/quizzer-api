@@ -64,11 +64,7 @@ export class GameManager {
 
       const room = roomResult.value;
 
-      if (room.status !== "waiting") {
-        return err("Game has already started");
-      }
-
-      if (room.players.length >= MAX_PLAYERS) {
+      if (room.getConnectedPlayers().length >= MAX_PLAYERS) {
         return err("Room is full");
       }
 
@@ -80,7 +76,6 @@ export class GameManager {
         existingPlayer.profilePicture = user.profilePicture;
         existingPlayer.mode = user.mode;
         existingPlayer.hasAnswered = false;
-        existingPlayer.score = 0;
         this.saveRoom(room);
         return ok(room);
       }
@@ -121,19 +116,20 @@ export class GameManager {
     const player = room.getPlayer(playerId);
     if (!player) return err("Player not found");
 
-    if (room.status === "waiting") {
-      room.removePlayer(playerId);
-      if (room.players.length === 0) {
-        this.deleteRoom(code);
-        return ok(null);
-      }
+    room.disconnectPlayer(playerId);
+    
+    const remainingPlayers = room.getConnectedPlayers();
 
+    if (remainingPlayers.length === 0) {
+      this.deleteRoom(code);
+      return ok(null);
+    }
+
+    if (room.status === "waiting") {
       // Transfer creator if needed
-      if (playerId === room.creatorId && room.players.length > 0) {
-        room.creatorId = room.players[0].id;
+      if (playerId === room.creatorId && remainingPlayers.length > 0) {
+        room.creatorId = remainingPlayers[0].id;
       }
-    } else {
-      room.disconnectPlayer(playerId);
     }
 
     this.saveRoom(room);

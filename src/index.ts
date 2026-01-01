@@ -82,22 +82,18 @@ app.get("/room/:code/exists", (c) => {
 
   const room = roomResult.value;
 
-  if (room.status !== "waiting") {
-    return c.json({
-      exists: true,
-      canJoin: false,
-      error: "Game has already started",
-    });
+  if (room.getConnectedPlayers().length >= 10) {
+    return c.json({ exists: true, canJoin: false, error: "Room is full" });
   }
 
-  if (room.players.length >= 10) {
-    return c.json({ exists: true, canJoin: false, error: "Room is full" });
+   if (room.getConnectedPlayers().length == 0) {
+    return c.json({ exists: true, canJoin: false, error: "Empty room" });
   }
 
   return c.json({
     exists: true,
     canJoin: true,
-    playerCount: room.players.length,
+    playerCount: room.getConnectedPlayers().length,
   });
 });
 
